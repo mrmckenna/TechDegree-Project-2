@@ -7,209 +7,108 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Mulish', sans-serif;
-    color: #222;
+    font-family: 'Baloo Da 2', cursive;
+    color: #393534;
     background: white;
   }
-  /* Link Styles */
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .image {
+    padding: 10px 0;
+    width: 90%;
+  }
+
+  .profile {
+    padding: 15px;
+    width: 70%;
+  }
   
+  .h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  p {
+    margin: 0 25px;
+    padding-bottom: 25px;
+  }
+
   a {
+    text-transform: uppercase;
     text-decoration: none;
-    color: #999;
+    color: #393534;
   }
   a:hover {
-    color: #6633ff;
+    color: #00c3b3;
   }
-  
-  /* Section Styles */
   
   .main-nav {
     width: 100%;
-    background: white;
     min-height: 30px;
     text-align: center;
-
+    padding-top: 10px;
   }
 
   .nav {
-    list-style-type: none;
     margin: 0 auto;
     padding: 0; 
   }
 
-  /* .nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
-  }
   .nav li {
-    padding: 5px 10px 10px 10px;
-  }
-  .nav a {
-    transition: all .5s;
-  }
-  .nav a:hover {
-    color: white
-  } */
-  
+    padding: 0 0 20px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  } 
+
   header {
     text-align: center;
     background-size: cover;
     overflow: hidden;
-  }
-  header {
-    line-height: 1.5;
-  }
-  header .profile-image {
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid black;
-    transition: all .5s;
-  }
-  header .profile-image:hover {
-    transform: scale(1.2) rotate(5deg);
-  }
-  .hobbies-image {
-    width: 100%;
-    height: auto;
-  }
-  .tag {
-    background-color: #efefef;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    display: table;
-    margin: 10px auto;
   } 
-  .location {
-    background-color: #222;
-    color: white;
-  }
-  .card {
-    margin: 30px;
-    padding: 20px 40px 40px;
-    max-width: 500px;
-    text-align: left;
-    background: #fff;
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
-    transition: all .5s;
-  }
-  .card:hover {
-    border-color: #ff99ff;
-  }
-  
-  ul.skills {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .skills li {
-    border-radius: 6px;
-    display: inline-block;
-    background: #ff9904;
-    color: white;
-    padding: 5px 10px;
-    margin: 2px;
-  }
-  
-  .skills li:nth-child(odd) {
-    background: #0399ff;
-  }
-  
-  footer {
+
+  .main-footer {
     width: 100%;
     min-height: 30px;
-    padding: 20px 0 40px 20px;
+    text-align: left;
+    padding: 0 10px;
   }
-  
-  footer .copyright {
-    top: -8px;
-    font-size: .75em;
-  }
-  
-  footer ul {
-    list-style-type: none;
+
+  footer p {
+    display: inline-block;   
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-right: 50px;
     margin: 0;
-    padding: 0;
   }
-  
-  footer ul li {
-    display: inline-block;
+
+  .container {
+    border-top: .5px solid lightgray;
+    padding: 10px 0;
   }
-  
-  a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .4;
-    transition: all .5s;
+
+  .back {
+    float: right;
   }
-  a.twitter {
-    background-image: url(images/twitter.svg);
+
+  .contact {
+    padding-top: 75px;
   }
-  a.linkedin {
-    background-image: url(images/linkedin.svg);
+
+  .intro {
+    padding-bottom: 25px;
   }
-  a.github {
-    background-image: url(images/github.svg);
+
+  .chat {
+    color: darkgrey;
   }
-  a.social:hover {
-    opacity: 1;
-  }
-  .clearfix {
+
+  .clearfix::after {
+    content: "";
     clear: both;
+    display: table;
   }
-  
-  /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
-    
-    .flex {
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: flex; 
-        max-width: 1200px;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-  
-    header {
-      min-height: 470px;
-    }
-  
-    .nav {
-      max-width: 1200px;
-      padding: 0;
-    }
-  
-  
-    main {
-      padding-top: 20px;
-    }
-  
-    main p {
-      line-height: 1.6em;
-    }
-  
-    footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-  
-  }
-  

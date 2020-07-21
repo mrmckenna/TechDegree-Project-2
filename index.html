@@ -17,9 +17,9 @@
 
   <nav class="main-nav">
     <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -31,10 +31,11 @@
     </section>
 
     <section>
-      <h2>Portfolio</h2>
+      <h2 id="portfolio">Portfolio</h2>
     </section>
 
     <section>
+      <div class="col">
       <img class="image" src="img/portfolio-1.png" alt="Marketing Page Preview">  
       <h3>Marketing Page</h3>
       <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
@@ -58,21 +59,22 @@
       <img class="image" src="img/portfolio-6.png" alt="Calculator Preview">
       <h3>Calculator</h3>
       <p>Someone can enter in the numbers they want, and press the big blue button and get results.</p>
+      </div>
     </section>
 
     <section class="contact">
-      <h2>Contact</h2>
+      <h2 id="contact">Contact</h2>
     </section>
 
     <section class="chat">
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p>Phone <a href="tel:+1(111)555-1234">+1(111)555-1234</a></p>
+      <p>Phone <a class="phone" href="tel:+1(111)555-1234">+1(111)555-1234</a></p>
       <p>Email <a class="email" href="mailto:email@cole.com">email@yoursite.com</a></p>  
     </section>
  
   </main>
-  <footer class="main-footer">
-    <div class="container clearfix">
+  <footer class="main-footer clearfix">
+    <div class="container">
       <p>Matt McKenna</p>
       <a href="#" class="back">Back To Top</a>
     </div>

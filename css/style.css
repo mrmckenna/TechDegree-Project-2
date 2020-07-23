@@ -39,8 +39,7 @@
 
   footer p {
     display: inline-block;   
-    padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-top: 13px;
     margin: 0;
     float: left;
   }
@@ -90,16 +89,21 @@
     display: flex;
   }
 
+  .footer-nav li {
+    display: none;
+  }
+
   .image {
     padding: 10px 0;
     width: 90%;
   }
 
   .container {
+    display: inline;
     width: 100%;
     text-align: center;
     border-top: .5px solid lightgray;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
   }
 
   .contact {
@@ -125,7 +129,7 @@
 
   .back {
     float: right;
-    padding-top: 10px;
+    padding: 0;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;

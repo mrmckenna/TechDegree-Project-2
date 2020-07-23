@@ -22,6 +22,7 @@
   } 
 
   h1 {
+    padding-bottom: 20px;
     font-size: 20px;
   }
 
@@ -68,12 +69,12 @@
     padding-top: 10px;
   }
 
-  .nav {
+  .main-nav {
     margin: 0 auto;
     padding: 0; 
   }
 
-  .nav li {
+  .main-nav li {
     padding: 0 0 20px 0;
     font-size: 14px;
     text-transform: uppercase;
@@ -136,11 +137,15 @@
 
   @media (min-width: 768px) {
 
+    .name {
+      padding-top: 30px;
+    }
+
     .main-nav {
       padding-bottom: 30px;
     }
 
-    .nav li {
+    .main-nav li {
       display: inline-block;
       padding: 0 15px;
     }
@@ -202,12 +207,109 @@
       padding-left: 5px;
     }
 
+    .back {
+      display: none;
+    }
+  
+    .footer-nav {
+      text-align: right;
+      margin: 0;
+      padding-top: 10px;    
+    }
 
+    .footer-nav li {
+      display: inline-block;
+      list-style: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-left: 30px;
+    } 
+
+    .main-footer {
+      padding-bottom: 50px;
+    }
 
     .clearfix::after {
       content: "";
       clear: both;
       display: table;
     }
+
+  }
+
+
+
+  @media (min-width: 1024px) {
+
+    .main-header {
+      box-sizing: border-box; 
+      text-align: left;
+      padding: 60px 0 60px 45px;
+    }
+
+    .name {
+      padding-right: 525px;
+      font-size: 25px;
+    }
+
+    .main-nav {
+      text-align: right;
+    }
+
+    .name,
+    .main-nav {
+      display: inline;
+    }
+
+    .intro p {
+      margin: 0;
+      padding-left: 45px;
+    }
+
+    .profile {
+      padding: 0 45px 0 45px;
+    }
+
+    .portfolio {
+      padding-top: 100px;
+    }
+
+    #portfolio {
+      padding-bottom: 25px;
+    }
+
+    .chat {
+      padding-bottom: 25px;
+    }
+
+    .back {
+      display: none;
+    }
+  
+    .footer-nav {
+      text-align: right;
+      margin: 0;
+      padding-top: 10px;    
+    }
+
+    .footer-nav li {
+      display: inline-block;
+      list-style: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+    } 
+
+    .main-footer {
+      padding-bottom: 0;
+    }
+
+
+
+
+
+
+
 
   }

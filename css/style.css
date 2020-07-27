@@ -22,6 +22,7 @@
   } 
 
   h1 {
+    color: #00c3b3;
     padding-bottom: 20px;
     font-size: 20px;
   }
@@ -87,6 +88,10 @@
     text-align: left;
     padding: 0 10px;
     display: flex;
+  }
+
+  .main-footer p {
+    color: #00c3b3;
   }
 
   .footer-nav li {
@@ -246,14 +251,20 @@
 
   @media (min-width: 1024px) {
 
+    body {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
     .main-header {
       box-sizing: border-box; 
       text-align: left;
-      padding: 60px 0 60px 45px;
+      padding: 60px 25px 60px 10px;
     }
 
     .name {
-      padding-right: 525px;
+      padding-right: 475px;
+      padding-left: 5px;
       font-size: 25px;
     }
 
@@ -266,17 +277,20 @@
       display: inline;
     }
 
+    .main-nav li {
+      padding-right: 0;
+      padding-left: 30px;
+    }
+
     .intro p {
       margin: 0;
-      padding-left: 45px;
+      padding-left: 15px;
     }
 
     .profile {
-      padding: 0 45px 0 45px;
-    }
-
-    .portfolio {
-      padding-top: 100px;
+      width: 35%;
+      float: right;
+      padding: 0 20px 0 45px;
     }
 
     #portfolio {
@@ -307,13 +321,38 @@
 
     .main-footer {
       padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
+    .container {
+      padding-top: 15px;
+    }
 
+    .portfolio {
+      text-align: center;
+      width: 100%;
+      padding: 75px 0 0 0;
+    }
+    
+    .col {
+      padding: 0 10px 0 10px;
+    }
 
+    .primary {
+      width: 33%;
+    }
 
+    .secondary,
+    .tertiary {
+      float: left;
+      width: 33%;
+    }
 
+    .clearfix {
+      padding-left: 10px;
+    }
 
-
+    
 
   }
